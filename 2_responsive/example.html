@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example flexbox</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        img {
+            width: 100%
+        }
+
+        .menu {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu .logo {
+            width: 150px;
+        }
+
+        .menu nav {
+            display: none;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu .navicon {
+            width: 20px;
+        }
+
+        .hero {
+            background-color: rgb(255, 184, 184);
+            text-align: center;
+            padding: 50px;
+            font-size: .8em;
+        }
+
+        .features-container article {
+            text-align: center;
+            margin: 50px 20px;
+        }
+
+        @media screen and (min-width: 650px) {
+
+            .hero {
+                font-size: 1.1em;
+            }
+
+        }
+
+        @media screen and (min-width: 850px) {
+
+            .menu .navicon {
+                display: none;
+            }
+
+            .menu nav {
+                display: block;
+            }
+
+            .hero {
+                font-size: 1.2em;
+            }
+
+            .features-container {
+                display: flex;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="menu">
+
+        <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2023/07/6_Logo-Microsoft_2012-1024x285.jpg"
+            alt="Logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tienda</a></li>
+            </ul>
+        </nav>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png" alt="Navicon" class="navicon">
+
+    </header>
+
+
+    <header class="hero">
+
+        <h1>Example flexbox</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque debitis iste aperiam aliquid iusto
+            magni
+            unde earum obcaecati velit, ullam ipsam provident blanditiis eligendi corporis fugit eius quo enim!</p>
+
+    </header>
+
+    <section class="features-container">
+
+        <article>
+            <h2>Lorem lol</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sed, dolor nostrum quidem ipsa totam
+                quisquam dolorem, tempore dignissimos sint non molestiae veritatis harum iste tempora provident ab
+                deserunt? Et?</p>
+        </article>
+
+        <article>
+            <h2>Lorem lol</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sed, dolor nostrum quidem ipsa totam
+                quisquam dolorem, tempore dignissimos sint non molestiae veritatis harum iste tempora provident ab
+                deserunt? Et?</p>
+        </article>
+
+        <article>
+            <h2>Lorem lol</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sed, dolor nostrum quidem ipsa totam
+                quisquam dolorem, tempore dignissimos sint non molestiae veritatis harum iste tempora provident ab
+                deserunt? Et?</p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>

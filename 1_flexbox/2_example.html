@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example flexbox</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 150px 100px;
+            background-color: brown;
+        }
+
+        .info-section {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        article {
+            width: 30%;
+        }
+
+        .menu {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 
+    header.menu>img+ul>li*3>a 
+    -->
+
+    <header class="menu">
+        <img class='logo' src="https://www.phoskitos.es/sites/default/files/2022-06/logo-phoskitos.png"
+            alt="Logotipo Phoskitos">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+        </ul>
+    </header>
+
+
+    <header class="hero">
+
+        <h1>Example flexbox</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque debitis iste aperiam aliquid iusto
+            magni
+            unde earum obcaecati velit, ullam ipsam provident blanditiis eligendi corporis fugit eius quo enim!</p>
+
+    </header>
+
+    <section class="info-section">
+
+        <article>
+            <h2>Columna</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                reprehenderit nobis illum a quam, vitae dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                reprehenderit nobis illum a quam, vitae dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate.</p>
+        </article>
+
+        <article>
+            <h2>Columna</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                reprehenderit nobis illum a quam, vitae dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate.</p>
+        </article>
+
+        <article>
+            <h2>Columna</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                reprehenderit nobis illum a quam, vitae dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                cupiditate.</p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
